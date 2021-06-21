@@ -1,0 +1,64 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+.bar{
+	background-color: green;
+	padding: 5px;
+	color: #fff;
+	
+}
+#cart-navbar  .cart .fa-shopping-cart{
+	font-size: 22px;
+	color: green;
+}
+#cart-navbar .contacts .fa-phone-alt{
+	font-size: 22px;
+	color: green;
+}
+#cart-navbar{
+	border-bottom: 2px solid grey;
+}
+.navbar .collapse .navbar-nav .nav-item .nav-link{
+	font-size: 17px;
+	color: #000;
+}
+/* =====================
+banner
+======================== */
+.banner .item .text-banner{
+	position: absolute;
+	top: 10rem;
+	right: 0;
+	left: 0px;
+	margin-left: 10rem;
+}
+.banner .item .text-banner h1{
+	font-size: 5rem;
+	font-weight: 900;
+}
+
+.banner .item .text-banner .shopnow {
+	flex-direction: column;
+}
+@media screen and (max-width: 800px) {
+	.banner .item .text-banner{
+		margin-left: 0rem;
+	}
+	.banner .item .text-banner h1{
+		font-size: 2rem;
+	}
+	
+}
+	
+@media screen and (max-width: 890px) {
+	.banner .item .text-banner h1{
+		font-size: 2rem;
+	}
+	.banner .item .slider img{
+		height:400px;
+		
+	}
+	
+}
