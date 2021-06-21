@@ -3,6 +3,14 @@
 	margin: 0;
 	box-sizing: border-box;
 }
+.color-primary{
+	color: green;
+}
+.btn-success{
+	color: #fff;
+	background-color: green;
+	border-radius: 10px;
+}
 .bar{
 	background-color: green;
 	padding: 5px;
@@ -27,13 +35,7 @@
 /* =====================
 banner
 ======================== */
-.banner .item .text-banner{
-	position: absolute;
-	top: 10rem;
-	right: 0;
-	left: 0px;
-	margin-left: 10rem;
-}
+
 .banner .item .text-banner h1{
 	font-size: 5rem;
 	font-weight: 900;
@@ -42,23 +44,139 @@ banner
 .banner .item .text-banner .shopnow {
 	flex-direction: column;
 }
+.banner .item .text-banner button{ 
+	background-color: green;
+	color: #fff;
+	margin-top: 10px;
+	border-radius: 10px;
+
+}
+
+.banner .item .text-banner{
+	position: absolute;
+	top: 9rem;
+	right: 0;
+	left: 0px;
+
+}
+.learn .btn-success{
+	color: #fff;
+	background-color: green;
+	border-radius: 10px;
+}
+.learn p{
+	font-size: 2rem;
+	font-weight: 900;
+}
+.learn .col-sm-3{
+	margin-left: 10px;
+	height: 250px;
+	border-radius: 10px;
+	transition: all linear 3s;
+	max-width: 280px;
+}
+.learn .col-sm-3:hover{
+	background-color: green;
+	color: #fff !important;
+	 
+}
+.learn .col-sm-3:hover .learn .col-sm-3 .fas,
+.learn .col-sm-3:hover .learn .col-sm-3 .fab
+{
+	
+	color: #fff;
+	 
+}
+.learn .col-sm-3 .fas,
+.learn .col-sm-3 .fab{
+	font-size: 30px;
+	color: green;
+	padding-top: 30px;
+}
+.learn .col-sm-3 .learn-title{
+	font-size: 22px;
+	font-weight: 700;
+}
+.learn .col-sm-3 a{
+	text-decoration: none;
+	color: #000;
+	
+}
+.learn .col-sm-3 a h6{
+	padding-top: 20px;
+	color: green !important;
+	font-size: 18px;
+	font-weight: 500;
+}
+.featured .col-sm-3 {
+	border:2px solid green;
+	max-width: 230px;
+	padding-bottom: 10px;
+}
+.featured .col-sm-3 button{
+	background-color: green;
+	color:#fff;
+	border-radius: 10px;
+}
+.featured .col-sm-3 img{
+	height: 250px;
+	object-fit: cover;
+}
+.more-colors-text {
+	position: absolute;
+	
+	margin-top: 7rem;
+}
+#about-us .col-sm-6{
+	max-width: 600px;
+	height: 100%;
+	
+}
+footer .row .col-sm-3 a{
+	align-items: center;
+}
+footer .row .col-sm-3 li{
+	list-style: none;
+}
+footer .Contacts .icon{
+	background-color: green;
+	border-radius: 35%;
+	padding: 20px;
+	margin-top: 20px;
+
+}
+footer .Contacts i{
+	font-size: 30px;
+}
+footer .Contacts span{
+	margin-top: 30px;
+}
 @media screen and (max-width: 800px) {
 	.banner .item .text-banner{
-		margin-left: 0rem;
+		position: absolute;
+		top: 2rem;
+		right: 0;
+		left: 0px;
 	}
-	.banner .item .text-banner h1{
-		font-size: 2rem;
+	.banner .item .text-banner h3{
+		display: none;
 	}
-	
+	.more-colors{
+		display: none;
+	}
 }
 	
 @media screen and (max-width: 890px) {
 	.banner .item .text-banner h1{
 		font-size: 2rem;
 	}
-	.banner .item .slider img{
-		height:400px;
-		
+	
+	
+}
+@media screen and (max-width: 400px) {
+	.banner .item img {
+		height: 200px;
 	}
+	
 	
 }
