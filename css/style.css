@@ -164,6 +164,9 @@ footer .Contacts span{
 	.more-colors{
 		display: none;
 	}
+	.feature-image{
+		display: none;
+	}
 }
 	
 @media screen and (max-width: 890px) {
