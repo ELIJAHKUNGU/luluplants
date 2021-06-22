@@ -165,6 +165,57 @@ footer .Contacts span{
 	display: block;
 	
 }
+/* ==============================
+product Page
+============================ */
+#product-page .row .col-sm-4 img{
+	height: 400px;
+}
+#product-page .row  .col-sm-6 .d-flex .stock{
+	color: red;
+	font-weight: 700;
+
+}
+#product-page .row  .col-sm-6 .d-flex form input{
+	height: 40px;
+	max-width: 70px;
+	border: none;
+	border: 2px solid green;
+}
+#product-page .row  .col-sm-6 .d-flex form input:focus{
+	outline: green;
+}
+#product-page .row  .col-sm-6  button{
+	background-color: green;
+	color: #fff;
+	border-radius: 5px;
+	transition: all linear 2s;
+}
+#product-page .row  .col-sm-6  button:hover{
+	background-color: #fff;
+	color: #000;
+
+}
+.products-page .card{
+	max-width: 250px;
+	margin-left: 20px;
+	margin-bottom: 20px;
+}
+.products-page .card img{
+	height: 300px;
+	object-fit: contain;
+	
+}
+.products-page .card button{
+	background-color: green;
+	min-width: 100px;
+	border-radius: 5px;
+	transition: all linear 3s;
+}
+.products-page .card button:hover{
+	background-color: #fff;
+	color: #000;
+}
 @media screen and (max-width: 800px) {
 	.banner .item .text-banner{
 		position: absolute;
