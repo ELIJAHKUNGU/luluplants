@@ -137,6 +137,10 @@ banner
 #about-us   .hiddenDiv{
 	display: none;
 }
+.hiddenDivcontacts{
+	display: none;
+	
+}
 footer .row .col-sm-3 a{
 	align-items: center;
 }

@@ -9,7 +9,21 @@ ShowDom.addEventListener("click", function() {
       }
   });
 
-
+  const showcontacts = document.querySelector('.showcontacts');
+  const hiddenDivcontacts = document.querySelector('.hiddenDivcontacts');
+  
+  showcontacts.addEventListener("click", function() {
+      if (hiddenDivcontacts.style.display === "none") {
+        hiddenDivcontacts.style.display = "block";
+        } else {
+            hiddenDivcontacts.style.display = "none";
+        }
+    });
+  
+  
+  
+  
+  
 
 
 
