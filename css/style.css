@@ -181,6 +181,12 @@ footer .Contacts span{
 	.banner .item .text-banner h1{
 		font-size: 2rem;
 	}
+	.featured .col-sm-3 {
+		border:none;
+		max-width: 270px;
+		padding-bottom: 10px;
+	}
+
 	
 	
 }
@@ -188,11 +194,7 @@ footer .Contacts span{
 	.banner .item img {
 		height: 200px;
 	}
-	.featured .col-sm-3 {
-		border:none;
-		max-width: 300px;
-		padding-bottom: 10px;
-	}
+	
 	
 	
 }
