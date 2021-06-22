@@ -1,3 +1,19 @@
+const ShowDom = document.querySelector('.showdom');
+const hideDiv = document.querySelector('.hiddenDiv');
+
+ShowDom.addEventListener("click", function() {
+    if (hideDiv.style.display === "none") {
+        hideDiv.style.display = "block";
+      } else {
+        hideDiv.style.display = "none";
+      }
+  });
+
+
+
+
+
+
 $(document).ready(function () {
     // main-banner owl carousel
 $(".banner .owl-carousel").owlCarousel({
@@ -19,3 +35,4 @@ $(".banner .owl-carousel").owlCarousel({
     },
 });
 });
+

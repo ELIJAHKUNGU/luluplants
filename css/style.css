@@ -131,7 +131,10 @@ banner
 	max-width: 600px;
 	height: 100%;	
 }
-#about-us h2{
+#about-us .about{
+	display: none;
+}
+#about-us   .hiddenDiv{
 	display: none;
 }
 footer .row .col-sm-3 a{
@@ -152,6 +155,10 @@ footer .Contacts i{
 }
 footer .Contacts span{
 	margin-top: 30px;
+}
+.active{
+	display: block;
+	
 }
 @media screen and (max-width: 800px) {
 	.banner .item .text-banner{
