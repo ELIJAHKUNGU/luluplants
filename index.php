@@ -169,7 +169,7 @@
                 <div class="col-sm-3 mb-3">
                     <a href="product.php" style="text-decoration: none; color: black;">
 
-                        <img src="images/popup_newsletter_img.jpg" class="img-fluid" alt="" srcset="">
+                        <img src="images/product1.jpg" class="img-fluid" alt="" srcset="">
                         <div class="d-flex mt-3">
                             <h5>Ksh 500</h5>
                             <button class="ml-auto btn btn-success">Add Cart</button>
