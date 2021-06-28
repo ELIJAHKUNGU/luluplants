@@ -29,9 +29,7 @@
                     </div>
                 </div>
                 <div class="cart ml-auto">
-                   <a href="./cart.html">
                     <i class="fas fa-shopping-cart"></i>
-                   </a>
                 </div>
             </div>
         </div>
@@ -46,16 +44,16 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav  mr-auto ml-auto font-rubik">
                     <li class="nav-item active">
-                        <a class="nav-link" href="./index.html">Home</a>
+                        <a class="nav-link" href="index.php">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="index.html">About Us</a>
+                        <a class="nav-link" href="index.php">About Us</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="./ourproducts.html">Our Products</a>
+                        <a class="nav-link" href="ourproducts.php">Our Products</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/index.html">Contacts</a>
+                        <a class="nav-link" href="index.php">Contacts</a>
                     </li>
 
                 </ul>
@@ -65,47 +63,32 @@
         <!-- !Primary Navigation -->
     </section>
     <section>
-        <div class="product-item" id="product-page">
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-4">
-                        <img src="./images/product/product1.jpg" class="img-fluid" alt="" srcset="">
+        <div class="container">
+            <div class="cart-products">
+                <div class="row col-sm-9 pt-3 pr-5 pb-3 ">
+                    <div class="col-sm-3 ">
+                        <img src="./images/product/product1.jpg" style="height: 100px;" class="img-fluid" alt=""
+                            srcset="">
                     </div>
-                    <div class="col-sm-6">
-                        <div class="mt-5">
-                            <h1 class="text-success">Berries </h1>
-                            <div class="d-flex">
-                                <h2>Brand :</h2>
-                                <h3 class="ml-5">Greenesta</h3>
-                            </div>
-                            <div class="d-flex">
-                                <h2>Availability :</h2>
-                                <h3 class="ml-5 stock">Instock</h3>
-                            </div>
-                            <div class="">
-                                <div class="d-block">
-                                    <div class="d-flex">
-                                        <h2>Quantity :</h2>
-                                        <form action="">
-                                            <input type="number" class="pl-2 ml-5" min="0" value="1" required name=""
-                                                id="">
+                    <div class="col-sm-9">
+                        <div class="d-flex">
+                            <div class="desc d-block">
+                                <h3>Quantity</h3>
+                                <h6>5</h6>
 
-                                    </div>
-                                    <div class="d-flex mt-3">
-                                      
-                                        <button class="ml-3 btn btn-success pl-5 pr-5">
-                                            <a href="./cart.html" style="text-decoration: none; color: #fff;">Add Cart</a></button>
-                                    
-                                        <button class="ml-3 btn btn-success pl-5 pr-5" disabled></buttonclass>Add
-                                            Wishlist</button>
-                                        </form>
-                                    </div>
-                                </div>
+                                <h6>Greenesta</h6>
                             </div>
-
+                            <div class="ml-auto">
+                                <h4>Price</h4>
+                                <h6>KSH 900</h6>
+                            </div>
                         </div>
                     </div>
                 </div>
+                <div class="totals text-right mr-5 pr-5">
+                    <h2 class="mr-5 pr-5" style="margin-right: 20px;">Total KSH 269</h2>
+                </div>
+
             </div>
         </div>
     </section>

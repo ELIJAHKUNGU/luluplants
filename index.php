@@ -28,8 +28,13 @@
                         <h4>07 3298 4329</h4>
                     </div>
                 </div>
-                <div class="cart ml-auto">
+                <div class="cart d-flex ml-auto">
+                   <div class="cart-bag">
                     <i class="fas fa-shopping-cart"></i>
+                   </div>
+                    <div class="cart-item">
+                        <span class="cart-items">0</span>
+                    </div>
                 </div>
             </div>
         </div>
@@ -44,13 +49,13 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav  mr-auto ml-auto font-rubik">
                     <li class="nav-item active">
-                        <a class="nav-link" href="./index.html">Home</a>
+                        <a class="nav-link" href="index.php">Home</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#abouts-company">About Us</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="./ourproducts.html">Our Products</a>
+                        <a class="nav-link" href="#ourproducts">Our Products</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#contacts">Contacts</a>
@@ -157,106 +162,56 @@
             </div>
         </div>
     </section>
-    <section>
-        <div class="row pl-5">
-            <div class="col-sm-3 feature-image">
-                <img src="./images/feature.png" class="img-fluid" alt="" srcset="">
-            </div>
-            <div class="col-sm-9 featured">
-                <h2>Featured Products</h2>
-                <div class="row">
-                    <a href="./product.html" style="text-decoration: none; color: black;">
-                        <div class="col-sm-3 mb-3">
-                        <img src="./images/product/product1.jpg" class="img-fluid" alt="" srcset="">
+    <section id="ourproducts">
+        <div class="container featured">
+            <h2 class="text-center mt-5 ">Featured Products</h2>
+            <div class="row pt-5 mb-3">
+                <div class="col-sm-3 mb-3">
+                    <a href="product.php" style="text-decoration: none; color: black;">
+
+                        <img src="images/popup_newsletter_img.jpg" class="img-fluid" alt="" srcset="">
                         <div class="d-flex mt-3">
                             <h5>Ksh 500</h5>
                             <button class="ml-auto btn btn-success">Add Cart</button>
                         </div>
-                    </div>
-                    </a>
-                    <a href="./product.html" style="text-decoration: none; color: black;">
-                    <div class="col-sm-3 mb-3">
-                        <img src="./images/product/product2.jpg" class="img-fluid" alt="" srcset="">
-                        <div class="d-flex mt-3">
-                            <h5>Ksh 500</h5>
-                            <button class="ml-auto btn btn-success">Add Cart</button>
-                        </div>
-                    </div>
-                    </a>
-                    <a href="./product.html" style="text-decoration: none; color: black;">
-                    <div class="col-sm-3 mb-3">
-                        <img src="./images/product/product3.jpg" class="img-fluid" alt="" srcset="">
-                        <div class="d-flex mt-3">
-                            <h5>Ksh 500</h5>
-                            <button class="ml-auto btn btn-success">Add Cart</button>
-                        </div>
-                    </div>
-                    </a>
-                    <a href="./product.html" style="text-decoration: none; color: black;">
-                    <div class="col-sm-3 mb-3">
-                        <img src="./images/product/product4.jpg" class="img-fluid" alt="" srcset="">
-                        <div class="d-flex mt-3">
-                            <h5>Ksh 500</h5>
-                            <button class="ml-auto btn btn-success">Add Cart</button>
-                        </div>
-                    </div>
-                    </a>
-                    <a href="./product.html" style="text-decoration: none; color: black;">
-                    <div class="col-sm-3 mb-3">
-                        <img src="./images/product/product5.jpg" class="img-fluid" alt="" srcset="">
-                        <div class="d-flex mt-3">
-                            <h5>Ksh 500</h5>
-                            <button class="ml-auto btn btn-success">Add Cart</button>
-                        </div>
-                    </div>
-                    </a>
-                    <a href="./product.html" style="text-decoration: none; color: black;">
-                    <div class="col-sm-3 mb-3">
-                        <img src="./images/product/product6.jpg" class="img-fluid" alt="" srcset="">
-                        <div class="d-flex mt-3">
-                            <h5>Ksh 500</h5>
-                            <button class="ml-auto btn btn-success">Add Cart</button>
-                        </div>
-                    </div>
-                    </a>
-                    <a href="./product.html" style="text-decoration: none; color: black;">
-                    <div class="col-sm-3 mb-3">
-                        <img src="./images/product/product7.jpg" class="img-fluid" alt="" srcset="">
-                        <div class="d-flex mt-3">
-                            <h5>Ksh 500</h5>
-                            <button class="ml-auto btn btn-success">Add Cart</button>
-                        </div>
-                    </div>
-                    </a>
-                    <a href="./product.html" style="text-decoration: none; color: black;">
-                    <div class="col-sm-3 mb-3">
-                        <img src="./images/product/product8.jpg" class="img-fluid" alt="" srcset="">
-                        <div class="d-flex mt-3">
-                            <h5>Ksh 500</h5>
-                            <button class="ml-auto btn btn-success">Add Cart</button>
-                        </div>
-                    </div>
-                    </a>
-                    <a href="./product.html" style="text-decoration: none; color: black;">
-                    <div class="col-sm-3 mb-3">
-                        <img src="./images/product/product9.jpg" class="img-fluid" alt="" srcset="">
-                        <div class="d-flex mt-3">
-                            <h5>Ksh 500</h5>
-                            <button class="ml-auto btn btn-success">Add Cart</button>
-                        </div>
-                    </div>
-                    </a>
-                     <a href="./product.html" style="text-decoration: none; color: black;">
-                    <div class="col-sm-3 mb-3">
-                        <img src="./images/product/product11.jpg" class="img-fluid" alt="" srcset="">
-                        <div class="d-flex mt-3">
-                            <h5>Ksh 500</h5>
-                            <button class="ml-auto btn btn-success">Add Cart</button>
-                        </div>
-                    </div>
                     </a>
                 </div>
+                <div class="col-sm-3 mb-3">
+                    <a href="product.php" style="text-decoration: none; color: black;">
+
+                        <img src="./assets/product2.jpg" class="img-fluid" alt="" srcset="">
+                        <div class="d-flex mt-3">
+                            <h5>Ksh 500</h5>
+                            <button class="ml-auto btn btn-success">Add Cart</button>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-sm-3 mb-3">
+                    <a href="product.php" style="text-decoration: none; color: black;">
+
+                        <img src="./assets/product3.jpg" class="img-fluid" alt="" srcset="">
+                        <div class="d-flex mt-3">
+                            <h5>Ksh 500</h5>
+                            <button class="ml-auto btn btn-success">Add Cart</button>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-sm-3 mb-3">
+                    <a href="product.php" style="text-decoration: none; color: black;">
+                        <img src="./assets/product4.jpg" class="img-fluid" alt="" srcset="">
+                        <div class="d-flex mt-3">
+                            <h5>Ksh 500</h5>
+                            <button class="ml-auto btn btn-success">Add Cart</button>
+                        </div>
+                    </a>
+                </div>
+                
             </div>
+            <div class="d-flex justify-content-center mb-5 more-products">
+                <button class="btn btn-success ">More Products</button>
+
+            </div>
+            
         </div>
     </section>
     <section id="abouts-company">
@@ -288,11 +243,20 @@
                 <div class="hiddenDiv">
                     <div class="row">
                         <div class="col-sm-6">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti odio maxime velit alias pariatur. Delectus exercitationem aut voluptates quam nulla, praesentium, rerum obcaecati assumenda quo vel et cumque ea aspernatur quis fugiat fugit. Odit, eligendi iste assumenda atque nesciunt, natus recusandae quidem obcaecati ipsum, molestias dolores voluptate vel consequuntur reiciendis reprehenderit explicabo! Sed nulla cumque distinctio exercitationem porro veritatis deleniti earum quasi asperiores sunt labore, alias quaerat! Nostrum quos beatae earum quasi provident nulla adipisci, aut, atque asperiores natus in fugit sint? Magni doloremque aliquam maxime, repellendus rerum voluptatibus quis consequuntur 
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti odio maxime velit alias
+                                pariatur. Delectus exercitationem aut voluptates quam nulla, praesentium, rerum
+                                obcaecati assumenda quo vel et cumque ea aspernatur quis fugiat fugit. Odit, eligendi
+                                iste assumenda atque nesciunt, natus recusandae quidem obcaecati ipsum, molestias
+                                dolores voluptate vel consequuntur reiciendis reprehenderit explicabo! Sed nulla cumque
+                                distinctio exercitationem porro veritatis deleniti earum quasi asperiores sunt labore,
+                                alias quaerat! Nostrum quos beatae earum quasi provident nulla adipisci, aut, atque
+                                asperiores natus in fugit sint? Magni doloremque aliquam maxime, repellendus rerum
+                                voluptatibus quis consequuntur
                                 distinctio deserunt sed asperiores provident perferendis, aut repudiandae velit.</p>
                         </div>
                         <div class="col-sm-6">
-                            <img src="./images/7_bffad3be-69eb-476e-b7be-593139fbad65_large.jpg" class="img-fluid" alt="" srcset="">
+                            <img src="./images/7_bffad3be-69eb-476e-b7be-593139fbad65_large.jpg" class="img-fluid"
+                                alt="" srcset="">
                         </div>
                     </div>
                 </div>
@@ -349,16 +313,17 @@
                             <form action="">
                                 <h2>Email us</h2>
                                 <div class="form-group">
-                                    <input type="text" name="" placeholder="Enter Your Email" id="" class="form-control">
+                                    <input type="text" name="" placeholder="Enter Your Email" id=""
+                                        class="form-control">
                                 </div>
                                 <div class="form-group">
-                                    <input type="text" name="" placeholder="Phone Number" id="" class="form-control">
+                                    <input type="text" name="" placeholder="Phone Number"  class="form-control">
                                 </div>
                                 <div class="form-group">
-                                  <textarea name="" id="" class="form-control" placeholder="Message Here"></textarea>
+                                    <textarea name=""  class="form-control" placeholder="Message Here"></textarea>
                                 </div>
                                 <div class="form-group">
-                                   <button type="submit" class="form-control" >Submit</button>
+                                    <button type="submit" class="form-control">Submit</button>
                                 </div>
                             </form>
                         </div>

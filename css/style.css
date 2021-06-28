@@ -32,6 +32,14 @@
 	font-size: 17px;
 	color: #000;
 }
+.cart .cart-item{
+	position: absolute;
+	right: 75px;
+	margin-top: -18px;
+	font-size: 22px;
+	font-weight: 900;
+	color: tomato;
+}
 /* =====================
 banner
 ======================== */
@@ -110,8 +118,7 @@ banner
 	font-weight: 500;
 }
 .featured .col-sm-3 {
-	border:2px solid green;
-	max-width: 230px;
+	
 	padding-bottom: 10px;
 }
 .featured .col-sm-3 button{
@@ -139,8 +146,12 @@ banner
 	display: none;
 }
 .hiddenDivcontacts{
-	display: none;
-	
+	display: none;	
+}
+.more-products button{
+	background-color: green;
+	color: #fff;
+	border-radius: 10px;
 }
 footer .row .col-sm-3 a{
 	align-items: center;
@@ -215,6 +226,13 @@ product Page
 .products-page .card button:hover{
 	background-color: #fff;
 	color: #000;
+
+}
+.totals .text-right{
+	float: right;
+	display: flex;
+	flex-direction: column;
+
 }
 @media screen and (max-width: 800px) {
 	.banner .item .text-banner{
