@@ -52,7 +52,7 @@
                         <a class="nav-link" href="index.php">About Us</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="ourproducts.php">Our Products</a>
+                        <a class="nav-link" href="">Our Products</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="/index.php">Contacts</a>
@@ -68,12 +68,24 @@
         <div class="product-item" id="product-page">
             <div class="container">
                 <div class="row">
+                    <?php
+                    $item_id = $_GET['item'];
+
+                    //materials  get name and price
+
+                    include "db.php";
+                    $qry = "SELECT * FROM product where product_id = $item_id ";
+                    $products = $conn->query($qry);
+                    while ($row = $products->fetch_assoc()) {
+
+                    ?>
                     <div class="col-sm-4">
-                        <img src="./images/product/product1.jpg" class="img-fluid" alt="" srcset="">
+                        <img src="<?php echo $row['product_image']?>" style="object-fit: contain" class="img-fluid" alt="" srcset="">
+
                     </div>
                     <div class="col-sm-6">
                         <div class="mt-5">
-                            <h1 class="text-success">Berries </h1>
+                            <h1 class="text-success"><?php echo $row['product_name']?> </h1>
                             <div class="d-flex">
                                 <h2>Brand :</h2>
                                 <h3 class="ml-5">Greenesta</h3>
@@ -104,6 +116,9 @@
 
                         </div>
                     </div>
+                    <?php
+                    }
+                    ?>
                 </div>
             </div>
         </div>

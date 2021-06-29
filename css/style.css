@@ -11,6 +11,23 @@
 	background-color: green;
 	border-radius: 10px;
 }
+#call-btn{
+	background: green;
+	padding: 10px;
+	color: #fff;
+	border: 2px solid #fff;
+	border-radius: 10px;
+	min-width: 150px;
+	text-transform: uppercase;
+	font-weight: 700;
+}
+#call-btn:hover{
+	color: #fff;
+	background: #111111;
+}
+#call-btn:focus{
+	outline: none;
+}
 .bar{
 	background-color: green;
 	padding: 5px;

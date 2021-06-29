@@ -24,8 +24,10 @@
             <div class="row mt-3">
                 <div class="contacts">
                     <div class="d-flex">
-                        <i class="fas fa-phone-alt mr-3"></i>
-                        <h4>07 3298 4329</h4>
+
+                        <form action="tel:0743770216">
+                            <button type="submit" id="call-btn">Call us</button>
+                        </form>
                     </div>
                 </div>
                 <div class="cart d-flex ml-auto">
@@ -166,45 +168,32 @@
         <div class="container featured">
             <h2 class="text-center mt-5 ">Featured Products</h2>
             <div class="row pt-5 mb-3">
-                <div class="col-sm-3 mb-3">
-                    <a href="product.php" style="text-decoration: none; color: black;">
+                <?php
+                //products
+                require 'db.php';
 
-                        <img src="images/product1.jpg" class="img-fluid" alt="" srcset="">
-                        <div class="d-flex mt-3">
-                            <h5>Ksh 500</h5>
-                            <button class="ml-auto btn btn-success">Add Cart</button>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-sm-3 mb-3">
-                    <a href="product.php" style="text-decoration: none; color: black;">
 
-                        <img src="./assets/product2.jpg" class="img-fluid" alt="" srcset="">
-                        <div class="d-flex mt-3">
-                            <h5>Ksh 500</h5>
-                            <button class="ml-auto btn btn-success">Add Cart</button>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-sm-3 mb-3">
-                    <a href="product.php" style="text-decoration: none; color: black;">
 
-                        <img src="./assets/product3.jpg" class="img-fluid" alt="" srcset="">
+                $qry13 = "SELECT * FROM `product` ";
+                $products =$conn->query($qry13);
+                while ($row= $products->fetch_assoc())
+                {
+                ?>
+                <div class="col-sm-3 mb-3 border">
+                    <a href="./product.php?item=<?php echo $row['product_id']; ?> "" style="text-decoration: none; color: black;">
+
+                        <img src="<?php echo $row['product_image']?>" class="img-fluid" alt="" srcset="">
+                        <span class="product-name">
+                            <h5 class="text-center"><?php echo $row['product_name']?></h5>
+                        </span>
                         <div class="d-flex mt-3">
-                            <h5>Ksh 500</h5>
-                            <button class="ml-auto btn btn-success">Add Cart</button>
+                            <h5>Ksh <?php echo $row['product_price']?></h5>
+                            <button class="ml-auto btn btn-success"><a href="./product.php?item=<?php echo $row['product_id']; ?> ">Add Cart</a></button>
                         </div>
                     </a>
                 </div>
-                <div class="col-sm-3 mb-3">
-                    <a href="product.php" style="text-decoration: none; color: black;">
-                        <img src="./assets/product4.jpg" class="img-fluid" alt="" srcset="">
-                        <div class="d-flex mt-3">
-                            <h5>Ksh 500</h5>
-                            <button class="ml-auto btn btn-success">Add Cart</button>
-                        </div>
-                    </a>
-                </div>
+                <?php } ?>
+
                 
             </div>
             <div class="d-flex justify-content-center mb-5 more-products">
@@ -231,8 +220,10 @@
         </div>
     </section>
     <section id="about-us" class="p-5">
-        <div class="container">
-        </div>
+        <!--<div class="container">
+            <button onclick="window.location='tel:917387084384';">Hot line</button>
+
+        </div>-->
         <div class="mt-5">
             <div class="container">
                 <div class="d-flex showdom ml-4 pt-3">
@@ -267,6 +258,9 @@
     </section>
     <section id="contacts" class="p-5">
         <div class="container">
+
+
+
         </div>
         <div class="mt-5">
             <div class="container">
