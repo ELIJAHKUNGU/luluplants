@@ -1,5 +1,6 @@
 <?php
 include 'header.php';
+
 ?>
     <section class="banner">
         <div class="owl-carousel owl-theme">
@@ -120,7 +121,7 @@ include 'header.php';
                         </span>
                         <div class="d-flex mt-3">
                             <h5>Ksh <?php echo $row['product_price']?></h5>
-                            <button class="ml-auto btn btn-success"><a href="./product.php?item=<?php echo $row['product_id']; ?> ">Add Cart</a></button>
+                            <button class="ml-auto btn btn-success"><a href="./product.php?item=<?php echo $row['product_id']; ?> " style="text-decoration:none; color:white">Add Cart</a></button>
                         </div>
                     </a>
                 </div>

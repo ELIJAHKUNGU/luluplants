@@ -18,6 +18,7 @@
 <body>
 <div class="bar">
     <h6 class="text-center">Get Free Shipping – Free 30 Day Money Back Guarantee</h6>
+
 </div>
 <div id="cart-navbar" class=" ">
     <div class="container">
@@ -57,10 +58,13 @@
                     <a class="nav-link" href="#abouts-company">About Us</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#ourproducts">Our Products</a>
+                    <a class="nav-link" href="./ourproducts.php">Our Products</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#contacts">Contacts</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./register.php">Account</a>
                 </li>
 
             </ul>

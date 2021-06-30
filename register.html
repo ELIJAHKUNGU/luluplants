@@ -1,3 +1,57 @@
+<?php
+
+
+if (isset($_POST["register"])) {
+
+    require 'db.php';
+    extract($_POST);
+    $email = $_POST['email'];
+    $phonenumber = $_POST['phonenumber'];
+    $password = $_POST['password'];
+    $sql = "SELECT * FROM `user` WHERE email = '$email' LIMIT =  1";
+    $result = mysqli_query($conn, $sql);
+    if ($result == FALSE){
+        header("Location: register.php?error=The Email Address already exist&$email");
+
+        exit();
+    }else{
+        $sql2 = "INSERT INTO `user`(`user_id`,  `email`, `phonenumber`,`password`)
+                                 VALUES (null,'$phonenumber','$email','$password')";
+        $result2 = mysqli_query($conn, $sql2);
+        if ($result2) {
+            header("Location:register.php?success=Your account has been created successfully");
+            exit();
+        }else {
+            header("Location: register.php?error=unknown error occurred&$email");
+            exit();
+        }
+    }
+
+
+
+
+
+}
+?>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -74,8 +128,8 @@
     <div class="account-page">
         <div class="container">
             <div class="row">
-                
-           
+
+
 
                 <div class="col-sm-12">
                     <div class="form-container">
@@ -86,16 +140,24 @@
 
                         </div>
                         <form action="" id="LoginForm">
-                            <input name="email" type="email" placeholder="Email Address">
-                            <input name-="password" type="password" placeholder=" Password ">
+                            <input name="" type="email" placeholder="Email Address">
+                            <input name="" type="password" placeholder=" Password ">
                             <button name="login-user" type="submit" class="btn btn-success">Login</button>
                         </form>
-                        <form action="" id="RegForm">
+                        <form  action="register.php" method="post" id="RegForm">
+                            <?php
+
+                            if (isset($_GET['error'])) { ?>
+                            <p class="error"><?php echo $_GET['error']; ?></p>
+                            <?php } ?>
+
+                            <?php if (isset($_GET['success'])) { ?>
+                            <p class="success"><?php echo $_GET['success']; ?></p>
+                            <?php } ?>
                             <input name="email" type="email" placeholder=" Email " required>
-                            <input name="username" type="text" placeholder="  Full Name  "required>
-                            <input name="phonenumber" type="password" placeholder=" Password" required>
+                            <input name="phonenumber" type="text" placeholder="  Full Name  "required>
                             <input name="password" type="password" placeholder=" Password" required>
-                            <button name="register-user" type="submit" class="btn btn-success">Register</button>
+                            <button name="register" type="submit" class="btn btn-success">Register</button>
                         </form>
 
                     </div>

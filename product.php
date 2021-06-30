@@ -1,5 +1,6 @@
 <?php
 include 'header.php';
+
 ?>
     <section>
         <div class="product-item" id="product-page">
@@ -7,6 +8,8 @@ include 'header.php';
                 <div class="row">
                     <?php
                     $item_id = $_GET['item'];
+                    $user_id =  $info ['user_id'];
+
 
                     //materials  get name and price
 
@@ -35,8 +38,8 @@ include 'header.php';
                                 <div class="d-block">
                                     <div class="d-flex">
                                         <h2>Quantity :</h2>
-                                        <form action="">
-                                            <input type="number" class="pl-2 ml-5" min="0" value="1" required name=""
+                                        <form action="product.php" method="post">
+                                            <input type="number" class="pl-2 ml-5" min="1" value="1"  name="quantity"
                                                 id="">
 
                                     </div>
