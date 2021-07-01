@@ -17,7 +17,12 @@ if (isset($_POST["register"])) {
                         (null,'$email','$phonenumber','$password')";
         $result2 =  mysqli_query($conn, $sql);
         if ($result2){
+            $info = mysqli_fetch_assoc($result2);
+
+            session_start();
+            $_SESSION["info"] = $info;
             header("location:register.php?success=Your account has been  successfully created login  ");
+
             exit();
         }else{
             header("location:register.php?error=unknown error occurred&$email");

@@ -4,6 +4,35 @@ include 'header.php';
     <section>
         <div class="container">
             <div class="cart-products">
+
+
+                <?php
+                if(isset($_GET['error'])){?>
+                <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                    <?php
+                     echo $_GET['error'];
+                    ?>
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+            <?php
+            }
+            ?>
+                <?php
+                if(isset($_GET['success'])){?>
+                    <div class="alert alert-success alert-dismissible fade show" role="alert">
+                        <?php
+                        echo $_GET['success'];
+                        ?>
+                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <?php
+                }
+                ?>
+
                 <div class="row col-sm-9 pt-3 pr-5 pb-3 ">
                     <div class="col-sm-3 ">
                         <img src="./images/product/product1.jpg" style="height: 100px;" class="img-fluid" alt=""

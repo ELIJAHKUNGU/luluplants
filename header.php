@@ -63,8 +63,15 @@
                 <li class="nav-item">
                     <a class="nav-link" href="#contacts">Contacts</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="./register.php">Account</a>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                       Account
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="register.php">Sign in | Register</a>
+                        <a class="dropdown-item" href="./index.php">Logout</a>
+
+                    </div>
                 </li>
 
             </ul>
