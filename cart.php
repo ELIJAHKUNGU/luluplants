@@ -1,105 +1,116 @@
 <?php
 include 'header.php';
 ?>
-    <section>
-        <div class="container">
-            <div class="cart-products">
-
-
-                <?php
-                if(isset($_GET['error'])){?>
-                <div class="alert alert-danger alert-dismissible fade show" role="alert">
+    <div id="cart_page_page">
+        <section class="cart_page_body">
+            <div class="container">
+                <div class="cart-products">
                     <?php
-                     echo $_GET['error'];
+                    if(isset($_GET['error'])){?>
+                        <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                            <?php
+                            echo $_GET['error'];
+                            ?>
+                            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <?php
+                    }
                     ?>
-                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-            <?php
-            }
-            ?>
-                <?php
-                if(isset($_GET['success'])){?>
-                    <div class="alert alert-success alert-dismissible fade show" role="alert">
-                        <?php
-                        echo $_GET['success'];
-                        ?>
-                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
                     <?php
-                }
-                ?>
-                <?php
-                require 'db.php';
-                $user_id = 1;
-                $qry = "SELECT * FROM `cart` WHERE  user_id = '$user_id'";
-                $results = $conn->query($qry);
-                while ($row = $results -> fetch_assoc()){
-
-
-                ?>
-
-
-
-
-
-
-
-
-
-                <div class="row col-sm-9 pt-3 pr-5 pb-3 ">
-
-
-
-                    <div class="col-sm-3 ">
+                    if(isset($_GET['success'])){?>
+                        <div class="alert alert-success alert-dismissible fade show" role="alert">
+                            <?php
+                            echo $_GET['success'];
+                            ?>
+                            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
                         <?php
-                        require 'db.php';
-                        $product_id = $row['product_id'];
-                        $qry2 = "SELECT * FROM `product` WHERE  product_id = '$product_id'";
-                        $results2 = $conn->query($qry2);
-                        while ($row2 = $results2 -> fetch_assoc()){
-                        ?>
-                        <img src="<?php echo $row2['product_image'] ?>" style="height: 100px;" class="img-fluid" alt=""
-                            srcset="">
+                    }
+                    ?>
+                    <div class="cart-title py-3">
+                        <h1>Cart (1)Item</h1>
                     </div>
-                    <div class="col-sm-9">
-                        <div class="d-flex">
-                            <div class="desc d-block">
-                                <h3>Quantity</h3>
-                                <?php $quantity =  $row['quanity'] ?>
-                                <h6><?php echo $row['quanity'] ?></h6>
-
-                                <h6>Greenesta</h6>
+                    <div class="row ">
+                        <div class="col-sm-3 ">
+                            <div class="">
+                                <h2>Item</h2>
                             </div>
-                            <div class="ml-auto">
-                                <h4>Price</h4>
-                                <?php
-                                $price =  $row2['product_price'];
-                                $total = $total + ($price * $quantity);
-                                ?>
-                                <h6>KSH <?php echo $row2['product_price']  ?></h6>
-                                <?php
-                                }
-                                ?>
+                        </div>
+                        <div class="col-sm-9">
+                            <div class="d-flex ml-auto">
+                                <h2>Quantity</h2>
+                                <div class="ml-auto mr-5">
+                                    <h2>Price</h2>
+
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
                     <?php
-                }
-                ?>
-                <div class="totals text-right mr-5 pr-5">
-                    <h2 class="mr-5 pr-5" style="margin-right: 20px;">Total KSH <?php
-                        echo number_format($total, 2); ;
+                    require 'db.php';
+                    $user_id = 1;
+                    $qry = "SELECT * FROM `cart` WHERE user_id = '$user_id'";
+                    $results = $conn->query($qry);
+                    while ($row = $results->fetch_assoc()) {
                         ?>
-                    </h2>
+                        <div class="row mb-2  pt-2 pr-5  cart_background">
+                            <div class="col-sm-3  ">
+                                <?php
+                                require 'db.php';
+                                $product_id = $row['product_id'];
+                                $qry2 = "SELECT * FROM `product` WHERE product_id = '$product_id'";
+                                $results2 = $conn->query($qry2);
+                                while ($row2 = $results2->fetch_assoc()) {
+                                ?>
+
+                                <img src="<?php echo $row2['product_image'] ?>" style="height: 100px;" class="img-fluid" alt="" srcset="">
+                            </div>
+                            <div class="col-sm-9">
+                                <div class="d-flex pt-4">
+                                    <div class="desc d-block">
+                                        <h6><?php echo $row['quanity']; ?></h6>
+                                        <h6><?php echo $row2['product_name'] ?></h6>
+                                        <i class="fas fa-trash-alt mr-2"></i>delete
+                                    </div>
+                                    <div class="ml-auto">
+                                        <?php
+                                        $price = $row2['product_price'];
+                                        $quantity = $row['quanity'];
+                                        $total = $total + ($price * $quantity);
+                                        ?>
+                                        <h6>KSH <?php echo $row2['product_price'] ?></h6>
+                                        <?php
+                                        }
+                                        ?>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <?php
+                    }
+                    ?>
+                    <div class="totals text-right  pr-5">
+                        <h2 class="" style=" 20px;">
+                            Total KSH <?php
+                            echo number_format($total, 2);
+                            ?>
+                        </h2>
+                    </div>
+                    <div class=" mt-3 pb-4 pr-5 mb-4">
+                        <div class="d-flex cart-btns-end">
+                            <button class="btn  continue-shopping">Continue Shopping</button>
+                            <button class="btn ml-3 proceed-checkout">Proceed Checkout</button>
+                        </div>
+
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+    </div>
 
     <footer>
         <div class="row p-5">

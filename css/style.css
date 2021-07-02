@@ -324,7 +324,33 @@ form a{
 	transform: translateX(100px);
 	transition: transform .5s;
 }
+button.continue-shopping{
+	background-color:white;
+	padding: 8px 15px;
+	border-radius:5px;
+}
+button.proceed-checkout{
+	background: green;
+	color: white;
+	border: none;
+	padding: 8px 15px;
+	border-radius: 5px;
+}
+.fa-trash-alt{
+	color:green;
+}
+#cart_page_page .cart_page_body{
+	padding-bottom: 30px;
+	background-color:hsl(0,0%,96%)
+}
+#cart_page_page .cart_background{
+	background-color:#fff;
+}
+.cart-btns-end{
+	left:0;
+	float:right;
 
+}
 
 @media screen and (max-width: 800px) {
 	.banner .item .text-banner{

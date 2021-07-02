@@ -31,10 +31,15 @@
                     </form>
                 </div>
             </div>
+
             <div class="cart d-flex ml-auto">
+                <a href="./cart.php">
                 <div class="cart-bag">
-                    <i class="fas fa-shopping-cart"></i>
+                    <a href="./cart.php">
+                        <i class="fas fa-shopping-cart"></i>
+                    </a>
                 </div>
+                </a>
                 <div class="cart-item">
                     <span class="cart-items">0</span>
                 </div>

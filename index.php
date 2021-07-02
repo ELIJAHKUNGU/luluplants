@@ -1,10 +1,7 @@
 <?php
 include 'header.php';
+?>
 
-?>
-<?php
-print_r($_SESSION);
-?>
     <section class="banner">
         <div class="owl-carousel owl-theme">
             <div class="item">
