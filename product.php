@@ -22,22 +22,6 @@ $user_id =  $info ['user_id'];*/
                     $products = $conn->query($qry);
                     while ($row = $products->fetch_assoc()) {
                     ?>
-                        <?php
-                        if(isset($_POST['save'])){
-                            //materials
-                            include "db.php";
-                            $item_id =  $row =['product_id'];
-                            $user_id = 1;
-                            $sql = "INSERT INTO `cart`(`cart_id`, `product_id`, `quanity`, `user_id`) 
-                   VALUES (null,'$item_id','$quantity','$user_id')";
-                            if ($conn->query($sql) === TRUE) {
-                                echo "New record created successfully";
-                            } else {
-                                echo "Error: " . $sql . "<br>" . $conn->error;
-                            }
-                            $conn->close();
-                        }
-                        ?>
                     <div class="col-sm-4">
                         <img src="<?php echo $row['product_image']?>" style="object-fit: contain" class="img-fluid" alt="" srcset="">
 

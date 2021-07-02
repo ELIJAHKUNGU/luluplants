@@ -32,32 +32,76 @@ include 'header.php';
                     <?php
                 }
                 ?>
+                <?php
+                require 'db.php';
+                $user_id = 1;
+                $qry = "SELECT * FROM `cart` WHERE  user_id = '$user_id'";
+                $results = $conn->query($qry);
+                while ($row = $results -> fetch_assoc()){
+
+
+                ?>
+
+
+
+
+
+
+
+
 
                 <div class="row col-sm-9 pt-3 pr-5 pb-3 ">
+
+
+
                     <div class="col-sm-3 ">
-                        <img src="./images/product/product1.jpg" style="height: 100px;" class="img-fluid" alt=""
+                        <?php
+                        require 'db.php';
+                        $product_id = $row['product_id'];
+                        $qry2 = "SELECT * FROM `product` WHERE  product_id = '$product_id'";
+                        $results2 = $conn->query($qry2);
+                        while ($row2 = $results2 -> fetch_assoc()){
+
+
+                        ?>
+
+                        <img src="<?php echo $row2['product_image'] ?>" style="height: 100px;" class="img-fluid" alt=""
                             srcset="">
+
+
                     </div>
                     <div class="col-sm-9">
                         <div class="d-flex">
                             <div class="desc d-block">
                                 <h3>Quantity</h3>
-                                <h6>5</h6>
+                                <h6><?php echo $row['quanity'] ?></h6>
 
                                 <h6>Greenesta</h6>
                             </div>
                             <div class="ml-auto">
                                 <h4>Price</h4>
-                                <h6>KSH 900</h6>
+
+                                <h6>KSH <?php echo $row2['product_price']  ?></h6>
+                                <?php
+                                }
+                                ?>
+
                             </div>
                         </div>
                     </div>
                 </div>
+                    <?php
+                }
+                ?>
+
+
                 <div class="totals text-right mr-5 pr-5">
                     <h2 class="mr-5 pr-5" style="margin-right: 20px;">Total KSH 269</h2>
                 </div>
 
             </div>
+
+
         </div>
     </section>
 
