@@ -61,31 +61,29 @@ include 'header.php';
                         $qry2 = "SELECT * FROM `product` WHERE  product_id = '$product_id'";
                         $results2 = $conn->query($qry2);
                         while ($row2 = $results2 -> fetch_assoc()){
-
-
                         ?>
-
                         <img src="<?php echo $row2['product_image'] ?>" style="height: 100px;" class="img-fluid" alt=""
                             srcset="">
-
-
                     </div>
                     <div class="col-sm-9">
                         <div class="d-flex">
                             <div class="desc d-block">
                                 <h3>Quantity</h3>
+                                <?php $quantity =  $row['quanity'] ?>
                                 <h6><?php echo $row['quanity'] ?></h6>
 
                                 <h6>Greenesta</h6>
                             </div>
                             <div class="ml-auto">
                                 <h4>Price</h4>
-
+                                <?php
+                                $price =  $row2['product_price'];
+                                $total = $total + ($price * $quantity);
+                                ?>
                                 <h6>KSH <?php echo $row2['product_price']  ?></h6>
                                 <?php
                                 }
                                 ?>
-
                             </div>
                         </div>
                     </div>
@@ -93,15 +91,13 @@ include 'header.php';
                     <?php
                 }
                 ?>
-
-
                 <div class="totals text-right mr-5 pr-5">
-                    <h2 class="mr-5 pr-5" style="margin-right: 20px;">Total KSH 269</h2>
+                    <h2 class="mr-5 pr-5" style="margin-right: 20px;">Total KSH <?php
+                        echo number_format($total, 2); ;
+                        ?>
+                    </h2>
                 </div>
-
             </div>
-
-
         </div>
     </section>
 
