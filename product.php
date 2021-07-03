@@ -1,7 +1,18 @@
+
+
+<?php
+
+if (!isset($_SESSION["info"])) {
+    header("location:register.php");
+} else {
+
+    $info = $_SESSION["info"];
+
+    $user_id = $info ['user_id'];
+}
+?>
 <?php
 include 'header.php';
-
-
 ?>
 
 
@@ -10,6 +21,9 @@ include 'header.php';
             <div class="container">
                 <div class="row">
                     <?php
+
+
+
                     $product_id = $_GET['item_id'];
                     //materials
                     include "db.php";
@@ -23,7 +37,7 @@ include 'header.php';
                     </div>
                     <div class="col-sm-6">
                         <div class="mt-5">
-                            <h1 class="text-success"><?php echo $row['product_name']?> </h1>
+                            <h1 class="text-success " style="color: green; text-transform: uppercase; font-weight:700"><?php echo $row['product_name']?> </h1>
                             <div class="d-flex">
                                 <h2>Price:</h2>
                                 <h3 class="ml-5"><?php echo $row['product_price']?> </h3>
@@ -36,9 +50,6 @@ include 'header.php';
                                 <div class="d-block">
                                     <div class="d-flex">
                                         <h2>Quantity :</h2>
-
-
-
                                         <form action="cartadd.php" method="post">
 
                                             <input type="number" name="quantity" class="pl-2 ml-5" min="1" value="1"   id="">

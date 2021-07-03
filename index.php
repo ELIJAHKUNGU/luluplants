@@ -117,7 +117,7 @@ include 'header.php';
 
                         <img src="<?php echo $row['product_image']?>" class="img-fluid" alt="" srcset="">
                         <span class="product-name">
-                            <h5 class="text-center"><?php echo $row['product_name']?></h5>
+                            <h5 class="text-center " style="color: green; text-transform: uppercase; font-weight:700"><?php echo $row['product_name']?></h5>
                         </span>
                         <div class="d-flex mt-3">
                             <h5>Ksh <?php echo $row['product_price']?></h5>

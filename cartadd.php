@@ -1,5 +1,6 @@
 
 <?php
+
 if(isset($_POST['save'])){
     require 'db.php';
     $user_id = 1;

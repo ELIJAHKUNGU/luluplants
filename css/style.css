@@ -196,8 +196,15 @@ footer .Contacts span{
 /* ==============================
 product Page
 ============================ */
+#product-page{
+	text-transform: uppercase;
+
+}
 #product-page .row .col-sm-4 img{
 	height: 400px;
+}
+#product-page .row  .col-sm-6 .d-flex h2{
+	font-weight: 700;
 }
 #product-page .row  .col-sm-6 .d-flex .stock{
 	color: red;
@@ -207,7 +214,6 @@ product Page
 #product-page .row  .col-sm-6 .d-flex form input{
 	height: 40px;
 	max-width: 70px;
-	border: none;
 	border: 2px solid green;
 }
 #product-page .row  .col-sm-6 .d-flex form input:focus{
@@ -338,6 +344,24 @@ button.proceed-checkout{
 }
 .fa-trash-alt{
 	color:green;
+	font-weight:700;
+
+}
+.desc{
+	text-transform:uppercase;
+}
+.desc .product_name{
+	font-size:20px;
+	color:green;
+	font-weight:900;
+}
+.desc .quantity{
+	font-weight:800;
+}
+.btn_remove{
+	background:none;
+	border: none;
+	text-transform: uppercase;
 }
 #cart_page_page .cart_page_body{
 	padding-bottom: 30px;
@@ -397,6 +421,9 @@ button.proceed-checkout{
 		max-width: 300px;
 
 
+	}
+	#ourproducts .row{
+		margin-left:20px;
 	}
 
 	

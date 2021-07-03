@@ -10,10 +10,9 @@ if (isset($_POST["save"])) {
         //success
 
         $info = mysqli_fetch_assoc($result);
-
         session_start();
         $_SESSION["info"] = $info;
-        header("location:index.php?success=You are  succesfully logged");
+        header("location:ourproducts.php?success=You are  succesfully logged");
         exit();
     }else{
         header("location:register.php?success=You are  succesfully logged");

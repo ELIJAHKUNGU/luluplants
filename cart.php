@@ -32,7 +32,17 @@ include 'header.php';
                     }
                     ?>
                     <div class="cart-title py-3">
-                        <h1>Cart (1)Item</h1>
+                        <?php
+                        require 'db.php';
+                        $user_id = 1;
+                        $sql = "SELECT * FROM cart  where user_id = '$user_id'";
+
+
+                        $result = mysqli_query($conn,$sql);
+                        $row4 = mysqli_num_rows($result);
+
+                        ?>
+                        <h1>Cart (<?php echo $row4;?>)Item</h1>
                     </div>
                     <div class="row ">
                         <div class="col-sm-3 ">
@@ -70,11 +80,17 @@ include 'header.php';
                                 <img src="<?php echo $row2['product_image'] ?>" style="height: 100px;" class="img-fluid" alt="" srcset="">
                             </div>
                             <div class="col-sm-9">
-                                <div class="d-flex pt-4">
+                                <div class="d-flex  pt-3">
                                     <div class="desc d-block">
-                                        <h6><?php echo $row['quanity']; ?></h6>
-                                        <h6><?php echo $row2['product_name'] ?></h6>
-                                        <i class="fas fa-trash-alt mr-2"></i>delete
+
+                                        <h6 class="product_name"><?php echo $row2['product_name'] ?></h6>
+
+                                            <h6 class="ml-3 quantity"><?php echo $row['quanity']; ?></h6>
+
+                                        <a href="delete.php?cart_id=<?php echo $row['cart_id']; ?>">
+                                            <button class="btn_remove"> <i class="fas fa-trash-alt mb-1 mr-2"></i>delete</button>
+                                        </a>
+
                                     </div>
                                     <div class="ml-auto">
                                         <?php
@@ -102,8 +118,12 @@ include 'header.php';
                     </div>
                     <div class=" mt-3 pb-4 pr-5 mb-4">
                         <div class="d-flex cart-btns-end">
-                            <button class="btn  continue-shopping">Continue Shopping</button>
-                            <button class="btn ml-3 proceed-checkout">Proceed Checkout</button>
+                            <a href="./ourproducts.php">
+                                <button class="btn  continue-shopping">Continue Shopping</button>
+                            </a>
+                            <a href="">
+                                <button class="btn ml-3 proceed-checkout">Proceed Checkout</button>
+                            </a>
                         </div>
 
                     </div>

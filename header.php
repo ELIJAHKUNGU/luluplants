@@ -40,9 +40,7 @@
                     </a>
                 </div>
                 </a>
-                <div class="cart-item">
-                    <span class="cart-items">0</span>
-                </div>
+
             </div>
         </div>
     </div>
