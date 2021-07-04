@@ -52,7 +52,7 @@ include 'header.php'
             </div>
         </div>
     </div>
-    <div class="container py-5">
+    <!-- <div class="container py-5">
         <div class="row">
             <div class="col-lg-5 col-sm-12">
                 <div class="get-in-touch">
@@ -89,7 +89,9 @@ include 'header.php'
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
+  
     <?php
+    include 'emailsend.php';
     include 'footer.php'
     ?>

@@ -570,3 +570,94 @@ label {
 		margin-left: 2rem;
 	}
 }
+.checkout-body {
+	background-color: white;
+}
+.checkout-title > h1 {
+	font-family: "roboto", sans-serif;
+	color: rgb(171, 171, 177);
+	font-weight: 400;
+	font-size: 16px;
+}
+.address-title,
+.address-body {
+	padding: 10px 30px;
+}
+@media (min-width: 200px) and (max-width: 960px) {
+	.names {
+		display: flex;
+		flex-direction: column;
+	}
+}
+.names {
+	display: flex;
+}
+.form-group {
+	display: flex;
+	flex-direction: column;
+}
+.details-submit {
+	background-color: hsl(120, 100%, 25%) !important;
+	border: none;
+	height: 50px;
+	color: white;
+}
+/*----------shipping----------*/
+.shipment > p,
+.shipment-form {
+	padding: 10px 30px;
+}
+/*---------payment -------*/
+.pay-with-mpesa {
+	display: flex;
+	padding: 10px 30px;
+}
+.pay-with-mpesa input {
+	margin: 5px 0;
+}
+.pay-with-mpesa > label {
+	padding: 0 20px;
+}
+.pay-with-mpesa > img {
+	height: 30px;
+	width: 30px;
+	object-fit: contain;
+}
+/*--------check out right---------*/
+.show-item-description {
+	display: flex;
+	border-bottom: 1px solid grey;
+}
+.show-item-description > img {
+	object-fit: contain;
+	height: 70px;
+	width: 70px;
+}
+.show-product-item-details {
+	display: flex;
+	flex-direction: column;
+}
+.calculated-totals {
+	padding-top: 20px;
+}
+.total-group {
+	padding: 10px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.total-title {
+	font-weight: 700;
+}
+.total-group > button {
+	background-color: hsl(120, 100%, 25%) !important;
+	border: none;
+	height: 50px;
+	color: white;
+	width: 100%;
+	border-radius: 2px;
+}
+.total-group > button > a {
+	text-decoration: none;
+	color: white;
+}
