@@ -1,17 +1,19 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
 * {
 	padding: 0;
 	margin: 0;
 	box-sizing: border-box;
+	font-family: "Poppins", sans-serif;
 }
-.color-primary{
+.color-primary {
 	color: green;
 }
-.btn-success{
+.btn-success {
 	color: #fff;
 	background-color: green;
 	border-radius: 10px;
 }
-#call-btn{
+#call-btn {
 	background: green;
 	padding: 10px;
 	color: #fff;
@@ -21,35 +23,34 @@
 	text-transform: uppercase;
 	font-weight: 700;
 }
-#call-btn:hover{
+#call-btn:hover {
 	color: #fff;
 	background: #111111;
 }
-#call-btn:focus{
+#call-btn:focus {
 	outline: none;
 }
-.bar{
+.bar {
 	background-color: green;
 	padding: 5px;
 	color: #fff;
-	
 }
-#cart-navbar  .cart .fa-shopping-cart{
+#cart-navbar .cart .fa-shopping-cart {
 	font-size: 22px;
 	color: green;
 }
-#cart-navbar .contacts .fa-phone-alt{
+#cart-navbar .contacts .fa-phone-alt {
 	font-size: 22px;
 	color: green;
 }
-#cart-navbar{
+#cart-navbar {
 	border-bottom: 2px solid grey;
 }
-.navbar .collapse .navbar-nav .nav-item .nav-link{
+.navbar .collapse .navbar-nav .nav-item .nav-link {
 	font-size: 17px;
 	color: #000;
 }
-.cart .cart-item{
+.cart .cart-item {
 	position: absolute;
 	right: 75px;
 	margin-top: -18px;
@@ -61,7 +62,7 @@
 banner
 ======================== */
 
-.banner .item .text-banner h1{
+.banner .item .text-banner h1 {
 	font-size: 5rem;
 	font-weight: 900;
 }
@@ -69,239 +70,243 @@ banner
 .banner .item .text-banner .shopnow {
 	flex-direction: column;
 }
-.banner .item .text-banner button{ 
+.banner .item .text-banner button {
 	background-color: green;
 	color: #fff;
 	margin-top: 10px;
 	border-radius: 10px;
-
 }
 
-.banner .item .text-banner{
+.banner .item .text-banner {
 	position: absolute;
 	top: 9rem;
 	right: 0;
 	left: 0px;
-	margin-left:6rem;
-
+	margin-left: 6rem;
 }
-.learn .btn-success{
+.learn .btn-success {
 	color: #fff;
 	background-color: green;
 	border-radius: 10px;
 }
-.learn p{
+.learn p {
 	font-size: 2rem;
 	font-weight: 900;
 }
-.learn .col-sm-3{
+.learn .col-sm-3 {
 	margin-left: 10px;
 	height: 250px;
 	border-radius: 10px;
 	transition: all linear 3s;
 	max-width: 280px;
 }
-.learn .col-sm-3:hover{
+.learn .col-sm-3:hover {
 	background-color: green;
 	color: #fff !important;
-	 
 }
 .learn .col-sm-3:hover .learn .col-sm-3 .fas,
-.learn .col-sm-3:hover .learn .col-sm-3 .fab
-{
-	
+.learn .col-sm-3:hover .learn .col-sm-3 .fab {
 	color: #fff;
-	 
 }
 .learn .col-sm-3 .fas,
-.learn .col-sm-3 .fab{
+.learn .col-sm-3 .fab {
 	font-size: 30px;
 	color: green;
 	padding-top: 30px;
 }
-.learn .col-sm-3 .learn-title{
+.learn .col-sm-3 .learn-title {
 	font-size: 22px;
 	font-weight: 700;
 }
-.learn .col-sm-3 a{
+.learn .col-sm-3 a {
 	text-decoration: none;
 	color: #000;
-	
 }
-.learn .col-sm-3 a h6{
+.learn .col-sm-3 a h6 {
 	padding-top: 20px;
 	color: green !important;
 	font-size: 18px;
 	font-weight: 500;
 }
 .featured .col-sm-3 {
-	
 	padding-bottom: 10px;
 }
-.featured .col-sm-3 button{
+.featured .col-sm-3 button {
 	background-color: green;
-	color:#fff;
+	color: #fff;
 	border-radius: 10px;
 }
-.featured .col-sm-3 img{
+.featured .col-sm-3 img {
 	height: 250px;
 	object-fit: cover;
 }
 .more-colors-text {
 	position: absolute;
-	
+
 	margin-top: 7rem;
 }
-#about-us .col-sm-6{
+#about-us .col-sm-6 {
 	max-width: 600px;
-	height: 100%;	
+	height: 100%;
 }
-#about-us .about{
+#about-us .about {
 	display: none;
 }
-#about-us   .hiddenDiv{
+#about-us .hiddenDiv {
 	display: none;
 }
-.hiddenDivcontacts{
-	display: none;	
+.hiddenDivcontacts {
+	display: none;
 }
-.more-products button{
+.more-products button {
 	background-color: green;
 	color: #fff;
 	border-radius: 10px;
 }
-footer .row .col-sm-3 a{
-	align-items: center;
+.footer {
+	background-color: #f1f2f6;
 }
-footer .row .col-sm-3 li{
+.footer-item h6 {
+	color: grey;
+	line-height: 25px;
+}
+.fa-phone-alt,
+.fa-envelope,
+.fa-map-marker-alt {
+	border-radius: 50%;
+	padding: 10px 10px;
+	background-color: white;
+	color: hsl(143, 44%, 39%);
+}
+.fa-twitter,
+.fa-instagram,
+.fa-facebook-f {
+	border-radius: 50%;
+	padding: 10px 10px;
+	background-color: white;
+	color: hsl(143, 44%, 39%);
+}
+footer .row .col-sm-3 li {
 	list-style: none;
 }
-footer .Contacts .icon{
+.footer-item a {
+	list-style: none;
+	text-decoration: none;
+}
+footer .Contacts .icon {
 	background-color: green;
 	border-radius: 35%;
 	padding: 20px;
 	margin-top: 20px;
-
 }
-footer .Contacts i{
-	font-size: 30px;
+.col-sm-3.footer-item h3 {
+	color: #000;
+	font-family: "Poppins", sans-serif;
+	font-weight: 700;
 }
-footer .Contacts span{
+footer .Contacts span {
 	margin-top: 30px;
 }
-.active{
+.active {
 	display: block;
-	
 }
 /* ==============================
 product Page
 ============================ */
-#product-page{
+#product-page {
 	text-transform: uppercase;
-
 }
-#product-page .row .col-sm-4 img{
+#product-page .row .col-sm-4 img {
 	height: 400px;
 }
-#product-page .row  .col-sm-6 .d-flex h2{
+#product-page .row .col-sm-6 .d-flex h2 {
 	font-weight: 700;
 }
-#product-page .row  .col-sm-6 .d-flex .stock{
+#product-page .row .col-sm-6 .d-flex .stock {
 	color: red;
 	font-weight: 700;
-
 }
-#product-page .row  .col-sm-6 .d-flex form input{
+#product-page .row .col-sm-6 .d-flex form input {
 	height: 40px;
 	max-width: 70px;
 	border: 2px solid green;
 }
-#product-page .row  .col-sm-6 .d-flex form input:focus{
+#product-page .row .col-sm-6 .d-flex form input:focus {
 	outline: green;
 }
-#product-page .row  .col-sm-6  button{
+#product-page .row .col-sm-6 button {
 	background-color: green;
 	color: #fff;
 	border-radius: 5px;
 	transition: all linear 2s;
 }
-#product-page .row  .col-sm-6  button:hover{
+#product-page .row .col-sm-6 button:hover {
 	background-color: #fff;
 	color: #000;
-
 }
-.products-page .card{
+.products-page .card {
 	max-width: 250px;
 	margin-left: 20px;
 	margin-bottom: 20px;
 }
-.products-page .card img{
+.products-page .card img {
 	height: 300px;
 	object-fit: contain;
-	
 }
-.products-page .card button{
+.products-page .card button {
 	background-color: green;
 	min-width: 100px;
 	border-radius: 5px;
 	transition: all linear 3s;
 }
-.products-page .card button:hover{
+.products-page .card button:hover {
 	background-color: #fff;
 	color: #000;
-
 }
-.totals .text-right{
+.totals .text-right {
 	float: right;
 	display: flex;
 	flex-direction: column;
-
 }
 /*accounts*/
-.account-page{
+.account-page {
 	padding: 30px 0;
-
 }
-.form-container{
-
+.form-container {
 	width: 650px;
 	height: 400px;
 	position: relative;
 	text-align: center;
 	padding: 20px 0;
 	margin: auto;
-
-
 }
-.form-container span{
+.form-container span {
 	font-weight: bold;
 	padding: 0 10px;
-	cursor:  pointer;
+	cursor: pointer;
 	width: 100px;
 	display: inline-block;
 }
-.form-btn{
+.form-btn {
 	display: inline-block;
 }
 
-.form-container form{
+.form-container form {
 	max-width: 600px;
 	padding: 0px 20px;
 	position: absolute;
 	top: 100px;
-	transition: transform .5s;
+	transition: transform 0.5s;
 	overflow: hidden;
-
 }
-form input{
+form input {
 	width: 100%;
 	height: 40px;
 	margin: 10px 0;
 	border: 1px solid #ccc;
 	padding-left: 10px;
-
 }
-form .btn{
+form .btn {
 	width: 100%;
 	border: none;
 	cursor: pointer;
@@ -310,135 +315,258 @@ form .btn{
 form .btn:focus {
 	outline: none;
 }
-#LoginForm{
+#LoginForm {
 	left: -300px;
 	display: none;
-
 }
-#RegForm{
+#RegForm {
 	left: 0;
 }
-form a{
+form a {
 	font-size: 1.2rem;
 }
-#Indicator{
+#Indicator {
 	width: 100px;
 	border: none;
 	background: green;
 	height: 3px;
 	margin-top: 8px;
 	transform: translateX(100px);
-	transition: transform .5s;
+	transition: transform 0.5s;
 }
-button.continue-shopping{
-	background-color:white;
+button.continue-shopping {
+	background-color: white;
 	padding: 8px 15px;
-	border-radius:5px;
+	border-radius: 5px;
 }
-button.proceed-checkout{
+button.proceed-checkout {
 	background: green;
 	color: white;
 	border: none;
 	padding: 8px 15px;
 	border-radius: 5px;
 }
-.fa-trash-alt{
-	color:green;
-	font-weight:700;
-
+.fa-trash-alt {
+	color: green;
+	font-weight: 700;
 }
-.desc{
-	text-transform:uppercase;
+.desc {
+	text-transform: uppercase;
 }
-.desc .product_name{
-	font-size:20px;
-	color:green;
-	font-weight:900;
+.desc .product_name {
+	font-size: 20px;
+	color: green;
+	font-weight: 900;
 }
-.desc .quantity{
-	font-weight:800;
+.desc .quantity {
+	font-weight: 800;
 }
-.btn_remove{
-	background:none;
+.btn_remove {
+	background: none;
 	border: none;
 	text-transform: uppercase;
 }
-#cart_page_page .cart_page_body{
+#cart_page_page .cart_page_body {
 	padding-bottom: 30px;
-	background-color:hsl(0,0%,96%)
+	background-color: hsl(0, 0%, 96%);
 }
-#cart_page_page .cart_background{
-	background-color:#fff;
+#cart_page_page .cart_background {
+	background-color: #fff;
 }
-.cart-btns-end{
-	left:0;
-	float:right;
-
+.cart-btns-end {
+	left: 0;
+	float: right;
 }
+/*---------about page ---------*/
+.about-below-nav {
+	display: flex;
+	flex-direction: column;
+}
+.core-values-show h1 {
+	font-family: "Poppins", sans-serif;
+	font-weight: 600;
+	color: green;
+	font-size: 32px;
+	text-align: center;
+}
+.about-below-nav h2 {
+	font-family: "Poppins", sans-serif;
+	font-weight: 600;
+	color: green;
+	font-size: 32px;
+}
+.about-below-nav p {
+	font-weight: 300px;
+	font-size: 16px;
+	line-height: 30px;
+}
+.about-below-nav button {
+	background-color: green;
+	height: 50px;
+	border: none;
+	border-radius: 5px;
+	width: 250px;
+	color: white;
+}
+.get-in-touch h1 {
+	font-weight: 700;
+}
+.core-values {
+	background-color: #f1f2f6;
+}
+.submit-btn button {
+	background-color: green;
+	height: 50px;
+	border: none;
+	border-radius: 5px;
+	width: 250px;
+	color: white;
+}
+textarea:focus,
+input:focus {
+	outline-width: 0;
+}
+label {
+	color: green;
+	font-weight: 600;
+}
+.core-item-1 {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+.fa-star,
+.fa-truck,
+.fa-heart {
+	color: green;
+	background-color: #fff;
+	border-radius: 50%;
+	padding: 10px 10px;
+}
+.core-item-1 h3 {
+	font-size: 16px;
+	line-height: 30px;
+}
+@media (min-width: 200px) and (max-width: 960px) {
+	.core-values-show h1 {
+		text-align: inherit;
+	}
+}
+/*---------about page end---------*/
+/*---------contact  page start---------*/
+.contact-us-top {
+	background-color: #f1f2f6;
+}
+.main-offers {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.offers h6 {
+	color: green;
+	font-weight: 700;
+	font-size: 42px;
+}
+.mail-list {
+	display: flex;
+	align-items: center;
+}
+#mail-icon {
+	position: absolute;
+	background-color: none !important;
+	border-radius: none !important;
+	padding: 0 !important;
+	padding-left: 20px !important;
+}
+.mail-list input {
+	width: 500px;
+	border: none;
+	border-radius: 30px;
+	height: 40px;
+}
+.mail-list input::placeholder {
+	padding-left: 70px;
+}
+.mail-list button {
+	margin-left: -100px;
+	height: 40px;
+	border-radius: 30px;
+	width: 200px;
+	background-color: green;
+	color: white;
+	border: none;
+}
+@media (min-width: 200px) and (max-width: 960px) {
+	.mail-list {
+		display: flex;
+	}
+	.mail-list input {
+		width: 300px;
+	}
+	#mail-icon {
+		display: none;
+	}
+	.mail-list button {
+		width: 150px;
+		margin-left: -150px;
+	}
+	.mail-list input::placeholder {
+		padding-left: 10px;
+	}
+}
+/*---------contact  page end---------*/
 
 @media screen and (max-width: 800px) {
-	.banner .item .text-banner{
+	.banner .item .text-banner {
 		position: absolute;
 		top: 2rem;
 		right: 0;
 		left: 0px;
 	}
-	.banner .item .text-banner h3{
+	.banner .item .text-banner h3 {
 		display: none;
 	}
-	.more-colors{
+	.more-colors {
 		display: none;
 	}
-	.feature-image img{
+	.feature-image img {
 		display: none;
 	}
-	#about-us  h1{
+	#about-us h1 {
 		display: none;
 	}
-	#about-us h2{
+	#about-us h2 {
 		display: block;
 	}
 }
-	
+
 @media screen and (max-width: 890px) {
-	.banner .item .text-banner h1{
+	.banner .item .text-banner h1 {
 		font-size: 2rem;
 	}
 	.featured .col-sm-3 {
-		border:none;
+		border: none;
 		max-width: 270px;
 		padding-bottom: 10px;
 	}
-	.form-container{
-
+	.form-container {
 		width: 400px;
 
 		margin: auto;
-
-
 	}
-	.form-container form{
+	.form-container form {
 		max-width: 300px;
-
-
 	}
-	#ourproducts .row{
-		margin-left:20px;
+	#ourproducts .row {
+		margin-left: 20px;
 	}
-
-	
-	
 }
 @media screen and (max-width: 400px) {
 	.banner .item img {
 		height: 250px;
 	}
-	.banner .item .text-banner{
-		
-		margin-left:2rem;
-	
+	.banner .item .text-banner {
+		margin-left: 2rem;
 	}
-	
-	
-	
 }

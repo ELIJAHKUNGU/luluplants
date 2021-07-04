@@ -58,13 +58,13 @@
                     <a class="nav-link" href="index.php">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#abouts-company">About Us</a>
+                    <a class="nav-link" href="./aboutus.php">About Us</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="./ourproducts.php">Our Products</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#contacts">Contacts</a>
+                    <a class="nav-link" href="./contact-us.php">Contacts</a>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
