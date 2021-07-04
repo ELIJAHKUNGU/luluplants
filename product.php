@@ -1,19 +1,13 @@
 <?php
-
-// if (!isset($_SESSION["info"])) {
-//     header("location:register.php");
-// } else {
-
-//     $info = $_SESSION["info"];
-
-//     $user_id = $info ['user_id'];
-// }
+require_once 'security.php';
 ?>
 <?php
 include 'header.php';
 ?>
 
-
+<?php
+print_r($_SESSION);
+?>
 <section>
     <div class="product-item" id="product-page">
         <div class="container">

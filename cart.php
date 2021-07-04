@@ -1,4 +1,5 @@
 <?php
+require_once 'security.php';
 include 'header.php';
 ?>
     <div id="cart_page_page">
@@ -34,7 +35,8 @@ include 'header.php';
                     <div class="cart-title py-3">
                         <?php
                         require 'db.php';
-                        $user_id = 1;
+                        $user_id =  $info ['user_id'];
+                       
                         $sql = "SELECT * FROM cart  where user_id = '$user_id'";
 
 
@@ -62,7 +64,7 @@ include 'header.php';
                     </div>
                     <?php
                     require 'db.php';
-                    $user_id = 1;
+                    $user_id =  $info ['user_id'];
                     $qry = "SELECT * FROM `cart` WHERE user_id = '$user_id'";
                     $results = $conn->query($qry);
                     while ($row = $results->fetch_assoc()) {

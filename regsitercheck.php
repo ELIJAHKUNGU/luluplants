@@ -1,7 +1,4 @@
 <?php
-require 'db.php';
-extract($_POST);
-
 if (isset($_POST["register"])) {
     require 'db.php';
     extract($_POST);
@@ -10,8 +7,8 @@ if (isset($_POST["register"])) {
     $result = mysqli_query($conn,$sql2);
 
     if (mysqli_num_rows($result) > 0){
-        header("Location:register.php?error=The Email Address exist login&$email");
-        exit();
+        header("Location:register.php?error=The Email Address exist login");
+       
     }else{
         $sql = "INSERT INTO `users`(`user_id`, `email`, `phone_number`, `password`) VALUES
                         (null,'$email','$phonenumber','$password')";
@@ -21,9 +18,8 @@ if (isset($_POST["register"])) {
 
             session_start();
             $_SESSION["info"] = $info;
-            header("location:register.php?success=Your account has been  successfully created login  ");
+            header("location:ourproducts.php?success=Your account has been  successfully created login  ");
 
-            exit();
         }else{
             header("location:register.php?error=unknown error occurred&$email");
         }
@@ -32,4 +28,3 @@ if (isset($_POST["register"])) {
 
 
 }
-?>

@@ -15,7 +15,7 @@ if (isset($_POST["save"])) {
         header("location:ourproducts.php?success=You are  succesfully logged");
         exit();
     }else{
-        header("location:register.php?success=You are  succesfully logged");
+        header("location:register.php?error=You didn't log in Wrong Email Address or Password");
 
 
     }

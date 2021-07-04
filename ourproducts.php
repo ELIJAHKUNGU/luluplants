@@ -25,7 +25,7 @@ include 'header.php';
                 ?>
                 <div class="col-sm-3 mb-3 border">
 
-                    <a href="./product.php?item_id=<?php echo $row['product_id']; ?> "" style="text-decoration: none; color: black;">
+                    <a href="./product.php?item_id=<?php echo $row['product_id']; ?> " style="text-decoration: none; color: black;">
 
                     <img src="<?php echo $row['product_image']?>" class="img-fluid" alt="" srcset="">
                     <span class="product-name">

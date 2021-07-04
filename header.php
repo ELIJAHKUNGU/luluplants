@@ -72,7 +72,7 @@
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                         <a class="dropdown-item" href="register.php">Sign in | Register</a>
-                        <a class="dropdown-item" href="./index.php">Logout</a>
+                        <a class="dropdown-item" href="./logout.php">Logout</a>
 
                     </div>
                 </li>

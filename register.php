@@ -64,7 +64,8 @@ include 'header.php';
                             <input name="password" type="password" placeholder=" Password ">
                             <button name="save" type="submit" class="btn btn-success">Login</button>
                         </form>
-                        <form  action="./regsitercheck.php" method="post" id="RegForm">
+    
+                        <form  action="regsitercheck.php" method="post" id="RegForm" enctype="submit">
                             <?php
 
                              if (isset($_GET['error'])) { ?>

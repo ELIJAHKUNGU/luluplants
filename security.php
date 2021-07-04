@@ -1,10 +1,19 @@
 <?php
 session_start();
-if (!isset($_SESSION["info"])) {
+// if (!isset($_SESSION["info"])) {
+//     header("location:register.php");
+// } else{
+
+//     $info = $_SESSION["info"];
+
+// echo $user_id =  $info ['user_id'];
+// }
+
+if( !isset($_SESSION['info']) ){
     header("location:register.php");
-} else{
-
+}else{
     $info = $_SESSION["info"];
-
-$user_id =  $info ['user_id'];
+  
 }
+$user_id =  $info ['user_id'];
+   
